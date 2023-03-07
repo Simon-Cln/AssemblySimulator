@@ -1,0 +1,28 @@
+!This is test file3
+
+!Random comments here
+#DATA
+VAR1 4
+var2 35
+mymult 0
+mydiv 0
+
+!and there
+
+#CODE
+LDA T0 VAR1
+LDA T1 var2
+BBG T1 T2 FUNCTION
+!useless commands that is served to jump over to my function
+BEQ T2 T3 WHRT
+ADD T0 T1
+LDA T3 4
+!hi this is my function
+FUNCTION
+MUL T0 3
+PUSH T0
+PUSH 18
+POP T0
+POP T1
+DIV T1 3
+HLT

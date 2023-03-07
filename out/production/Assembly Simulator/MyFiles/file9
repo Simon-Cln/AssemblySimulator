@@ -1,0 +1,14 @@
+!test DIV
+
+#DATA
+A 3
+B 15
+RES 0
+
+#CODE
+LDA T0 A
+LDA T1 B
+DIV T0 T1
+STR RES T0
+HLT
+

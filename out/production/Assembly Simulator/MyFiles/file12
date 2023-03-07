@@ -1,0 +1,22 @@
+!Felipe GM - MOD7 Computer Architecture Concordia Continuing Education
+!Final assignment for the Fall Class 2022
+!fibonacci
+
+#data
+res 0
+
+#code
+LDA t0 1
+LDA t1 1
+ADD t0 t1
+LDA t3 6
+loopFibo:
+LDA t2 t0
+ADD t0 t1
+LDA t1 t2
+DEC t3
+BNE t3 0 loopFibo
+
+STR res t0
+HLT
+

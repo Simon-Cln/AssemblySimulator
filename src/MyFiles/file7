@@ -1,0 +1,23 @@
+!test AND
+
+#DATA
+A 5
+B 1
+RES 0
+
+#CODE
+LDA T0 A
+LDA T1 B
+AND T0 T1
+BEQ T0 1 EQ1
+JMP EQ0
+
+!label equals 1
+EQ1
+STR RES T0
+HLT
+
+!label equals 0
+EQ0
+STR RES T0
+HLT

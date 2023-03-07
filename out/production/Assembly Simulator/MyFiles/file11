@@ -1,0 +1,19 @@
+!Felipe GM - MOD7 Computer Architecture Concordia Continuing Education
+!Final assignment for the Fall Class 2022
+!factorial
+
+#data
+res 0
+number 5
+
+#code
+LDA t0 1
+LDA t1 number
+loopFac:
+MUL t0 t1
+DEC t1
+BNE t1 0 loopFac
+
+STR res t0
+HLT
+

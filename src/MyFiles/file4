@@ -1,0 +1,24 @@
+!Loop while
+
+#DATA
+A 2
+B 4
+CPT 20
+
+LDA T0 3
+
+#CODE
+LDA T0 A
+LDA T1 B
+LDA T3 CPT
+JMP LOOP
+!Label Loop
+habdkqsbdq,nsd
+LOOP
+BEQ T3 0 END
+ADD T0 T1
+DEC T3
+JMP LOOP
+!Label End
+END
+HLT

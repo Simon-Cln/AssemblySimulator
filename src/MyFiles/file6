@@ -1,0 +1,15 @@
+!testing indirect addresses
+#DATA
+A 5
+B 6
+COls 9
+DAR 10
+RES 09
+
+#CODE
+LDA T0 A+2
+LDA T1 B+12
+STR COls+1 17
+LDA T2 A+1
+STR B+2 12
+HLT

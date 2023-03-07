@@ -1,0 +1,19 @@
+!This is test file2
+
+!Random comments here
+#DATA
+A 98
+B 127
+
+!and there
+
+#CODE
+LDA T2 A
+LDA T1 B
+LDA T3 A
+BEQ T2 T3 WHRT
+ADD T0 T1
+WHRT
+SUB T2 B
+STR B T2
+HLT

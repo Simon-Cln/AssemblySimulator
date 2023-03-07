@@ -1,0 +1,23 @@
+!test MOD / is even
+
+#DATA
+A 2
+B 12
+RES 0
+
+#CODE
+LDA T0 A
+LDA T1 B
+MOD T0 T1
+BEQ T0 0 EVEN
+JMP ODD
+
+!label res even =0
+EVEN
+STR RES T0
+HLT
+
+!label res odd =1
+ODD
+STR RES T0
+HLT
